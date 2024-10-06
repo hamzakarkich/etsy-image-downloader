@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etsy Image Downloader</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .button {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      background: #F1641E;
+      color: white;
+      cursor: pointer;
+    }
+    .button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 16px;
+      padding: 8px;
+      border-radius: 4px;
+    }
+    .success { background: #e8f5e9; color: #2e7d32; }
+    .error { background: #ffebee; color: #c62828; }
+    .progress { background: #e3f2fd; color: #1565c0; }
+  </style>
+</head>
+<body>
+  <h2>Etsy Image Downloader</h2>
+  <button id="downloadMain" class="button">Download Main Image</button>
+  <button id="downloadAll" class="button">Download All Images</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
